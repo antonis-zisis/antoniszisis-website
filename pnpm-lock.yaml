@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@netlify/edge-functions':
+        specifier: ^2.5.1
+        version: 2.5.1
+      '@netlify/remix-edge-adapter':
+        specifier: ^3.2.2
+        version: 3.2.2(@remix-run/server-runtime@2.9.1(typescript@5.4.5))(vite@5.2.10(@types/node@20.12.7))
+      '@netlify/remix-runtime':
+        specifier: ^2.2.0
+        version: 2.2.0(@remix-run/server-runtime@2.9.1(typescript@5.4.5))
       '@remix-run/node':
         specifier: ^2.9.1
         version: 2.9.1(typescript@5.4.5)
@@ -72,6 +81,9 @@ importers:
       vite:
         specifier: ^5.2.10
         version: 5.2.10(@types/node@20.12.7)
+      vite-tsconfig-paths:
+        specifier: ^4.3.2
+        version: 4.3.2(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7))
 
 packages:
 
@@ -677,6 +689,23 @@ packages:
 
   '@mdx-js/mdx@2.3.0':
     resolution: {integrity: sha512-jLuwRlz8DQfQNiUCJR50Y09CGPq3fLtmtUQfVrj79E0JWu3dvsVcxVIcfhR5h0iXu+/z++zDrYeiJqifRynJkA==}
+
+  '@netlify/edge-functions@2.5.1':
+    resolution: {integrity: sha512-6YGlbzxPaSqc/D2LhP4T4PXrim/vRmqpO1RwQKqVod6WCWlkdtJcAd3mGoI7efrjfND8twh7TqXtL7RRCI23qA==}
+
+  '@netlify/remix-edge-adapter@3.2.2':
+    resolution: {integrity: sha512-P5825z8HE0zNWUTJd6kal3EJ1IRiy67NDcglSs/Xkf4fXTrYIvNHIUY4h/0Iy402f6+hCfGP/qIP9mhEUk5/gg==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      vite: ^5.0.0
+    peerDependenciesMeta:
+      vite:
+        optional: true
+
+  '@netlify/remix-runtime@2.2.0':
+    resolution: {integrity: sha512-E4b+/DDPcVF5GkbZt1sGCZ2fRO4at/WuDybJ4oXUpn5giW65KTJ8x0OBDEKZa1XI7uHEU0IAupuUNpYwVga+Pw==}
+    peerDependencies:
+      '@remix-run/server-runtime': ^2.7.1
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==}
@@ -2061,6 +2090,9 @@ packages:
   globby@11.1.0:
     resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==}
     engines: {node: '>=10'}
+
+  globrex@0.1.2:
+    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
   gopd@1.0.1:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
@@ -3705,6 +3737,16 @@ packages:
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
+  tsconfck@3.0.3:
+    resolution: {integrity: sha512-4t0noZX9t6GcPTfBAbIbbIU4pfpCwh0ueq3S4O/5qXI1VwK1outmxhe9dOiEWqMz3MW2LKgDTpqWV+37IWuVbA==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   tsconfig-paths@3.15.0:
     resolution: {integrity: sha512-2Ac2RgzDe/cn48GvOe3M+o82pEFewD3UPbyoUHHdKasHwJKjds4fLXWf/Ux5kATBKN20oaFGu+jbElp1pos0mg==}
 
@@ -3862,6 +3904,14 @@ packages:
     resolution: {integrity: sha512-axFo00qiCpU/JLd8N1gu9iEYL3xTbMbMrbe5nDp9GL0nb6gurIdZLkkFogZXWnE8Oyy5kfSLwNVIcVsnhE7lgQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
+
+  vite-tsconfig-paths@4.3.2:
+    resolution: {integrity: sha512-0Vd/a6po6Q+86rPlntHye7F31zA2URZMbH8M3saAZ/xR9QoGN/L21bxEGfXdWmFdNkqPpRdxFT7nmNe12e9/uA==}
+    peerDependencies:
+      vite: '*'
+    peerDependenciesMeta:
+      vite:
+        optional: true
 
   vite@5.2.10:
     resolution: {integrity: sha512-PAzgUZbP7msvQvqdSD+ErD5qGnSFiGOoWmV5yAKUEI0kdhjbH6nMWVyZQC/hSc4aXwc0oJ9aEdIiF9Oje0JFCw==}
@@ -4590,6 +4640,21 @@ snapshots:
       vfile: 5.3.7
     transitivePeerDependencies:
       - supports-color
+
+  '@netlify/edge-functions@2.5.1': {}
+
+  '@netlify/remix-edge-adapter@3.2.2(@remix-run/server-runtime@2.9.1(typescript@5.4.5))(vite@5.2.10(@types/node@20.12.7))':
+    dependencies:
+      '@netlify/remix-runtime': 2.2.0(@remix-run/server-runtime@2.9.1(typescript@5.4.5))
+      isbot: 4.4.0
+    optionalDependencies:
+      vite: 5.2.10(@types/node@20.12.7)
+    transitivePeerDependencies:
+      - '@remix-run/server-runtime'
+
+  '@netlify/remix-runtime@2.2.0(@remix-run/server-runtime@2.9.1(typescript@5.4.5))':
+    dependencies:
+      '@remix-run/server-runtime': 2.9.1(typescript@5.4.5)
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     dependencies:
@@ -6416,6 +6481,8 @@ snapshots:
       merge2: 1.4.1
       slash: 3.0.0
 
+  globrex@0.1.2: {}
+
   gopd@1.0.1:
     dependencies:
       get-intrinsic: 1.2.4
@@ -8231,6 +8298,10 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
+  tsconfck@3.0.3(typescript@5.4.5):
+    optionalDependencies:
+      typescript: 5.4.5
+
   tsconfig-paths@3.15.0:
     dependencies:
       '@types/json5': 0.0.29
@@ -8437,6 +8508,17 @@ snapshots:
       - sugarss
       - supports-color
       - terser
+
+  vite-tsconfig-paths@4.3.2(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)):
+    dependencies:
+      debug: 4.3.4
+      globrex: 0.1.2
+      tsconfck: 3.0.3(typescript@5.4.5)
+    optionalDependencies:
+      vite: 5.2.10(@types/node@20.12.7)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
 
   vite@5.2.10(@types/node@20.12.7):
     dependencies:

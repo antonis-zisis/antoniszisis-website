@@ -1,2 +1,11 @@
-/build
 /node_modules
+
+/.cache
+/public/build
+/build
+
+# Local Netlify folder
+.netlify
+.DS_Store
+
+.env

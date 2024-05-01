@@ -1,5 +1,7 @@
 # Antonis Zisis
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/99607c54-38dd-4e2e-998f-06bfbd9d3cea/deploy-status)](https://app.netlify.com/sites/antoniszisis/deploys)
+
 Documentation for the **Antonis Zisis** website.
 
 - Domain name: <www.antoniszisis.com>

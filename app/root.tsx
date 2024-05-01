@@ -1,23 +1,27 @@
-import { Links, Meta, Outlet, Scripts } from '@remix-run/react';
+import {
+  Links,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+} from '@remix-run/react';
 
 import './globals.css';
 
 export default function App() {
   return (
-    <html>
+    <html lang="en">
       <head>
-        <link rel="icon" href="data:image/x-icon;base64,AA" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <Meta />
         <Links />
       </head>
 
       <body>
-        <h1 className="flex items-center justify-center">
-          Hello world! Refresh works
-        </h1>
-
         <Outlet />
+        <ScrollRestoration />
         <Scripts />
       </body>
     </html>
