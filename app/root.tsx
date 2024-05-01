@@ -1,5 +1,7 @@
 import { Links, Meta, Outlet, Scripts } from '@remix-run/react';
 
+import './globals.css';
+
 export default function App() {
   return (
     <html>
@@ -11,7 +13,9 @@ export default function App() {
       </head>
 
       <body>
-        <h1>Hello world!</h1>
+        <h1 className="flex items-center justify-center">
+          Hello world! Refresh works
+        </h1>
 
         <Outlet />
         <Scripts />
