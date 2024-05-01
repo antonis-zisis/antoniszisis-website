@@ -1,15 +1,17 @@
 {
   "name": "antoniszisis-website",
   "version": "1.0.0",
-  "description": "Antonis Zisis' personal website",
-  "main": "index.js",
-  "scripts": {
-    "build": "remix vite:build",
-    "serve": "remix-serve build/server/index.js"
-  },
-  "author": "Antonis Zisis",
-  "license": "ISC",
   "type": "module",
+  "description": "Antonis Zisis' personal website",
+  "author": "Antonis Zisis",
+  "scripts": {
+    "dev": "remix vite:dev --port 3000",
+    "build": "remix vite:build",
+    "start": "remix-serve build/server/index.js",
+    "lint": "eslint --ignore-path .gitignore .",
+    "typecheck": "tsc",
+    "prepare": "husky"
+  },
   "dependencies": {
     "@remix-run/node": "^2.9.1",
     "@remix-run/react": "^2.9.1",
@@ -19,7 +21,19 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@remix-run/dev": "^2.9.1",
+    "@remix-run/eslint-config": "^2.9.1",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5",
     "vite": "^5.2.10"
   }
 }
