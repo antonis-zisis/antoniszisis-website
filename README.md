@@ -11,9 +11,9 @@ Documentation for the **Antonis Zisis** website.
 ## Tech Stack
 
 - React: 18
-- Remix: 2.9 with Vite
-- NodeJS: 20.11.1
-- PNPM
+- Remix: 2.15 with Vite
+- NodeJS: 22.10.0
+- PNPM: 9.14.2
 
 ## Getting Started
 
