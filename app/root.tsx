@@ -5,7 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
   type MetaFunction,
-} from '@remix-run/react';
+} from 'react-router';
 
 import './tailwind.css';
 
