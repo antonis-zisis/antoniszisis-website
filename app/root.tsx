@@ -1,13 +1,13 @@
+import './tailwind.css';
+
 import {
   Links,
   Meta,
+  type MetaFunction,
   Outlet,
   Scripts,
   ScrollRestoration,
-  type MetaFunction,
-} from '@remix-run/react';
-
-import './tailwind.css';
+} from 'react-router';
 
 export const meta: MetaFunction = () => {
   return [
