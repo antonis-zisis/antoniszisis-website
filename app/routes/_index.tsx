@@ -1,6 +1,6 @@
 export default function Index() {
   return (
-    <div className="mx-auto w-full max-w-screen-lg px-4 pt-20 sm:px-6 md:px-8">
+    <div className="mx-auto w-full max-w-(--breakpoint-lg) px-4 pt-20 sm:px-6 md:px-8">
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
         <div>
           <h1 className="text-5xl font-semibold">Antonis Zisis</h1>
