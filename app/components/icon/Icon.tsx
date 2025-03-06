@@ -4,7 +4,6 @@ import {
   HomeIcon,
   StarIcon,
 } from '@heroicons/react/24/solid';
-
 import { GitHub, Linkedin } from 'react-feather';
 
 const HeroIcons = {
