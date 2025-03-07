@@ -1,17 +1,11 @@
 import './tailwind.css';
 
-import {
-  Links,
-  Meta,
-  type MetaFunction,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from 'react-router';
+import type { MetaFunction } from 'react-router';
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'Antonis Zisis | Senior Full Stack Software Engineer' },
+    { title: 'Antonis Zisis' },
     { name: 'author', content: 'Antonis Zisis' },
     { name: 'description', content: "Antonis Zisis' personal website" },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
