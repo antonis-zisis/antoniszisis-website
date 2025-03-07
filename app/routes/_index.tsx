@@ -1,8 +1,17 @@
+import { useNavigate } from 'react-router';
+
+import { Button } from '@/components/button';
 import { Link } from '@/components/link';
 
 export default function Index() {
+  const navigate = useNavigate();
+
+  function onTimelineClick() {
+    navigate('/timeline');
+  }
+
   return (
-    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col justify-center">
+    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start justify-center">
       <span className="mb-6 font-mono text-lg font-normal text-teal-300">
         Hi, my name is
       </span>
@@ -12,7 +21,7 @@ export default function Index() {
         Welcome to my website!
       </h2>
 
-      <p className="max-w-2xl text-lg font-normal text-slate-500">
+      <p className="mb-12 max-w-2xl text-lg font-normal text-slate-500">
         I’m a Full-Stack Software Engineer from Greece, specializing in building
         web and mobile applications. Currently, I lead a team of seven at{' '}
         <Link to="https://kaizengaming.com/home">Kaizen</Link>, developing the
@@ -21,6 +30,8 @@ export default function Index() {
         crafting high-performance applications and fostering team growth, I
         thrive on building seamless user experiences and scalable solutions.
       </p>
+
+      <Button onClick={onTimelineClick}>Check out my timeline!</Button>
     </div>
   );
 }
