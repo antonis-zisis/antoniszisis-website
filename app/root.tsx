@@ -3,7 +3,7 @@ import './tailwind.css';
 import type { MetaFunction } from 'react-router';
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
 
-import { ThemeToggle } from '@/components/theme-toggle';
+import { Navbar } from '@/components/navbar';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 
 export const meta: MetaFunction = () => {
@@ -27,7 +27,7 @@ export default function App() {
 
       <body className="bg-slate-50 text-slate-600 antialiased dark:bg-slate-900 dark:text-slate-200">
         <ThemeProvider>
-          <ThemeToggle />
+          <Navbar />
           <Outlet />
         </ThemeProvider>
 
