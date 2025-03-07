@@ -9,7 +9,7 @@ type Props = {
 export function Link({ children, to }: Props) {
   return (
     <RRLink
-      className="text-teal-300 hover:underline"
+      className="text-red-800 hover:underline dark:text-teal-300"
       to={to}
       target="_blank"
       rel="noopener noreferrer"
