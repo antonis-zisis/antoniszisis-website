@@ -4,7 +4,7 @@ import {
   HomeIcon,
   StarIcon,
 } from '@heroicons/react/24/solid';
-import { GitHub, Linkedin } from 'react-feather';
+import { GitHub, Linkedin, Moon, Sun } from 'react-feather';
 
 const HeroIcons = {
   BeakerIcon,
@@ -16,6 +16,8 @@ const HeroIcons = {
 const FeatherIcons = {
   GitHubIcon: GitHub,
   LinkedinIcon: Linkedin,
+  MoonIcon: Moon,
+  SunIcon: Sun,
 };
 
 const AllIcons = { ...HeroIcons, ...FeatherIcons };
