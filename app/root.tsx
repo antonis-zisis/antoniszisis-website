@@ -3,6 +3,7 @@ import './tailwind.css';
 import type { MetaFunction } from 'react-router';
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
 
+import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 
@@ -29,6 +30,7 @@ export default function App() {
         <ThemeProvider>
           <Navbar />
           <Outlet />
+          <Footer />
         </ThemeProvider>
 
         <ScrollRestoration />
