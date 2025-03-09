@@ -24,7 +24,7 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        'fixed top-0 z-10 flex h-20 w-full items-center justify-between px-6 py-0 transition-all duration-300 sm:px-6 md:px-10 lg:px-20',
+        'fixed top-0 left-[50%] z-10 flex h-20 w-full max-w-(--breakpoint-lg) translate-x-[-50%] items-center justify-between px-6 py-0 transition-all duration-300 sm:px-6 md:px-10 lg:px-20',
         {
           'bg-white/80 shadow-md backdrop-blur-md dark:bg-slate-900/80':
             window.innerWidth <= 768,
