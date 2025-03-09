@@ -3,16 +3,17 @@ import { Link as RRLink } from 'react-router';
 
 type Props = {
   children: ReactNode;
+  openInNewTab?: boolean;
   to: string;
 };
 
-export function Link({ children, to }: Props) {
+export function Link({ children, openInNewTab = false, to }: Props) {
   return (
     <RRLink
-      className="text-red-800 hover:underline dark:text-teal-300"
+      className="text-slate-600 hover:text-red-800 dark:text-slate-200 dark:hover:text-teal-300"
       to={to}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={openInNewTab ? '_blank' : undefined}
+      rel={openInNewTab ? 'noopener noreferrer' : undefined}
     >
       {children}
     </RRLink>
