@@ -1,22 +1,23 @@
 import { CompanyLink } from '@/components/company-link';
+import { Divider } from '@/components/divider';
 import { Icon } from '@/components/icon';
 
 export default function About() {
   return (
     <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start">
-      <h1 className="mb-10 pt-28 text-3xl font-semibold text-slate-600 dark:text-slate-200">
+      <h1 className="pt-28 text-3xl font-semibold text-slate-600 dark:text-slate-200">
         About Me
       </h1>
 
-      {/* <h2 className="mt-2 text-lg font-medium">
-            Senior Full-Stack Software Engineer
-          </h2> */}
+      <h2 className="text-lg font-medium text-slate-600 dark:text-slate-400">
+        Full-Stack Software Engineer
+      </h2>
 
-      {/* <div className="my-6 border-b border-slate-800" /> */}
+      <Divider />
 
       <div className="flex w-full flex-col gap-x-5 text-base text-slate-600 md:flex-row dark:text-slate-400">
         <div className="w-full md:w-1/3">
-          {/* <p>Image / Avatar here</p> */}
+          {/* TODO <p>Image / Avatar here</p> */}
 
           <div className="space-y-2">
             <div className="flex items-center">
@@ -87,10 +88,6 @@ export default function About() {
           </p>
         </div>
       </div>
-
-      {/* <div className="my-6 border-b border-slate-800" /> */}
-
-      {/* Skills list */}
     </div>
   );
 }
