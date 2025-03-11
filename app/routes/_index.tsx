@@ -1,19 +1,8 @@
 import { useNavigate } from 'react-router';
 
 import { Button } from '@/components/button';
-import { Link } from '@/components/link';
+import { CompanyLink } from '@/components/company-link';
 import { Accent } from '@/components/typography';
-
-function CompanyText() {
-  return (
-    <Link className="group" openInNewTab to="https://kaizengaming.com/home">
-      <span className="relative text-red-800 dark:text-teal-300">
-        Kaizen
-        <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-red-800 transition-all duration-300 group-hover:w-full dark:bg-teal-300" />
-      </span>
-    </Link>
-  );
-}
 
 export default function Index() {
   const navigate = useNavigate();
@@ -39,7 +28,7 @@ export default function Index() {
       <p className="mb-12 max-w-2xl text-lg font-normal text-slate-600 dark:text-slate-400">
         I&apos;m a Full-Stack Software Engineer from Greece, specializing in
         building web and mobile applications. Currently, I lead a team of seven
-        at <CompanyText />, developing the live events pages for
+        at <CompanyLink />, developing the live events pages for
         <Accent> Stoiximan</Accent> and
         <Accent> Betano</Accent>. Passionate about crafting high-performance
         applications and fostering team growth, I thrive on building seamless

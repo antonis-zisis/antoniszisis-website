@@ -1,9 +1,96 @@
+import { CompanyLink } from '@/components/company-link';
+import { Icon } from '@/components/icon';
+
 export default function About() {
   return (
-    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-center justify-center">
-      <h1 className="font-mono text-6xl text-red-800 dark:text-teal-300">
-        Coming Soon!
+    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start">
+      <h1 className="mb-10 pt-28 text-3xl font-semibold text-slate-600 dark:text-slate-200">
+        About Me
       </h1>
+
+      {/* <h2 className="mt-2 text-lg font-medium">
+            Senior Full-Stack Software Engineer
+          </h2> */}
+
+      {/* <div className="my-6 border-b border-slate-800" /> */}
+
+      <div className="flex w-full flex-col gap-x-5 text-base text-slate-600 md:flex-row dark:text-slate-400">
+        <div className="w-full md:w-1/3">
+          {/* <p>Image / Avatar here</p> */}
+
+          <div className="space-y-2">
+            <div className="flex items-center">
+              <Icon className="mr-2 size-5" name="BuildingOfficeIcon" />
+              <h3>
+                Currently working at <CompanyLink />.
+              </h3>
+            </div>
+
+            <div className="flex items-center">
+              <Icon className="mr-2 size-5" name="HomeIcon" />
+              <h3>Living in Kalamata, Greece.</h3>
+            </div>
+
+            <div className="flex items-center">
+              <Icon className="mr-2 size-5" name="BeakerIcon" />
+              <h3>TypeScript, React, Node, fp-ts.</h3>
+            </div>
+
+            <div className="flex items-center">
+              <Icon className="mr-2 size-5" name="StarIcon" />
+              <h3>Gym, Gaming and Movies.</h3>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex w-full flex-col gap-y-5 md:w-2/3">
+          <p>
+            Hello! I&apos;m Antonis, a software engineer from Kalamata, Greece.
+            I hold a B.Sc. in Software Engineering from the University of
+            Salford, U.K., and I&apos;ve been working in the industry for over a
+            decade. Throughout my career, I&apos;ve contributed to both small
+            startups and large corporations, gaining experience across diverse
+            environments.
+          </p>
+
+          <p>
+            I&apos;m passionate about building innovative desktop and mobile
+            applications, as well as crafting responsive websites and backend
+            systems. I stay up to date with the latest technologies in app and
+            web development, always striving to deliver top-tier functionality
+            and seamless user experiences. Custom UI design is a priority for
+            me, ensuring that every project is both visually appealing and
+            user-friendly.
+          </p>
+
+          <p>
+            My love for software development started back in school when I took
+            my first algorithms class - it was love at first sight. Initially, I
+            aspired to become a game developer, but life had other plans. While
+            searching for opportunities in game development, I was offered an
+            exciting role as a web developer at a startup. That decision shaped
+            my career, and today, I can&apos;t imagine doing anything else.
+          </p>
+
+          <p>
+            Currently, I&apos;m a Software Engineering Team Lead at{' '}
+            <CompanyLink />, where I lead a team of seven in developing live
+            event pages for Stoiximan and Betano. My role involves technical
+            decision-making, mentoring, and fostering team growth.
+          </p>
+
+          <p>
+            Outside of work, I enjoy hitting the gym, playing video games, and
+            watching movies. I also love experimenting with new technologies
+            through side projects - right now, I&apos;m exploring Effect and
+            Lynx.
+          </p>
+        </div>
+      </div>
+
+      {/* <div className="my-6 border-b border-slate-800" /> */}
+
+      {/* Skills list */}
     </div>
   );
 }
