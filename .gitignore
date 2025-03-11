@@ -5,7 +5,6 @@ node_modules/
 /public/build
 /build
 
-# Local Netlify folder
 .netlify
 .DS_Store
 
