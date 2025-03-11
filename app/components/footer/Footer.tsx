@@ -4,7 +4,13 @@ import { Link } from '@/components/link';
 
 export function Footer() {
   return (
-    <div className="fixed bottom-0 z-10 flex h-20 w-full items-center justify-end px-20 py-0">
+    <div className="fixed bottom-0 z-10 flex h-20 w-full items-center justify-between px-20 py-0">
+      <div className="flex items-center justify-center">
+        <span className="text-xs text-slate-600 dark:text-slate-400">
+          Copyright © 2025 | All rights reserved.
+        </span>
+      </div>
+
       <div className="flex gap-5">
         <Link openInNewTab to="https://github.com/antonis-zisis">
           <HoverAnimation>
