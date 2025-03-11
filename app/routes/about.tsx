@@ -15,9 +15,13 @@ export default function About() {
 
       <Divider />
 
-      <div className="flex w-full flex-col gap-x-5 text-base text-slate-600 md:flex-row dark:text-slate-400">
+      <div className="flex w-full flex-col gap-x-10 text-base text-slate-600 md:flex-row dark:text-slate-400">
         <div className="w-full md:w-1/3">
-          {/* TODO <p>Image / Avatar here</p> */}
+          <img
+            className="mb-10 rounded"
+            src="https://res.cloudinary.com/dtywrdtmw/image/upload/v1741703170/antonis/me_2023_zylbnk.jpg"
+            alt="My Avatar"
+          />
 
           <div className="space-y-2">
             <div className="flex items-center">
