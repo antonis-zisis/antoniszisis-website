@@ -5,6 +5,5 @@ import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  // @ts-expect-error there is an issue with "tailwindcss" and "netlifyPlugin" types
   plugins: [reactRouter(), tsconfigPaths(), tailwindcss(), netlifyPlugin()],
 });
