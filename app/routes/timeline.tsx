@@ -1,5 +1,6 @@
 import cn from 'classnames';
 
+import { Card } from '@/components/card';
 import { Divider } from '@/components/divider';
 import { timelineData } from '@/data/timeline';
 
@@ -54,19 +55,12 @@ export default function Timeline() {
                     'pl-4': !isEven,
                   })}
                 >
-                  <div className="rounded bg-slate-200 p-4 dark:bg-slate-800">
-                    <h3 className="text-lg font-semibold text-slate-600 dark:text-slate-200">
-                      {item.title}
-                    </h3>
-
-                    <h4 className="text-base text-slate-600 dark:text-slate-400">
-                      {item.company}
-                    </h4>
-
-                    <p className="mt-3 text-sm font-normal text-slate-600 dark:text-slate-400">
-                      {item.description}
-                    </p>
-                  </div>
+                  <Card
+                    title={item.title}
+                    subtitle={item.company}
+                    description={item.description}
+                    tags={item.tags}
+                  />
                 </div>
 
                 <div
@@ -87,5 +81,3 @@ export default function Timeline() {
     </div>
   );
 }
-
-// Want animations (e.g., fade-in effects)? I can add Framer Motion!
