@@ -20,44 +20,53 @@ export default function Timeline() {
         <div className="absolute top-0 left-1/2 h-full w-px -translate-x-1/2 transform bg-red-800 dark:bg-teal-300" />
 
         <div className="flex flex-col space-y-8">
-          {timelineData.map((item, index) => (
-            <div
-              key={item.id}
-              className={cn(
-                'relative flex items-center justify-between',
-                index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-              )}
-            >
-              <div className="absolute left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-red-800 dark:bg-teal-300" />
+          {timelineData.map((item, index) => {
+            const isEven = index % 2 === 0;
 
-              <div className={cn('w-1/2', index % 2 === 0 ? 'pr-4' : 'pl-4')}>
-                <div className="rounded bg-slate-200 p-4 dark:bg-slate-800">
-                  <h3 className="text-lg font-semibold text-slate-600 dark:text-slate-200">
-                    {item.title}
-                  </h3>
+            return (
+              <div
+                key={item.id}
+                className={cn('relative flex items-center justify-between', {
+                  'flex-row': isEven,
+                  'flex-row-reverse': !isEven,
+                })}
+              >
+                <div className="absolute left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-red-800 dark:bg-teal-300" />
 
-                  <h4 className="text-base text-slate-600 dark:text-slate-400">
-                    {item.company}
-                  </h4>
+                <div
+                  className={cn('w-1/2', {
+                    'pr-4': isEven,
+                    'pl-4': !isEven,
+                  })}
+                >
+                  <div className="rounded bg-slate-200 p-4 dark:bg-slate-800">
+                    <h3 className="text-lg font-semibold text-slate-600 dark:text-slate-200">
+                      {item.title}
+                    </h3>
 
-                  <p className="mt-3 text-sm font-normal text-slate-600 dark:text-slate-400">
-                    {item.description}
-                  </p>
+                    <h4 className="text-base text-slate-600 dark:text-slate-400">
+                      {item.company}
+                    </h4>
+
+                    <p className="mt-3 text-sm font-normal text-slate-600 dark:text-slate-400">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  className={cn('flex w-1/2', {
+                    'justify-start pl-4': isEven,
+                    'justify-end pr-4': !isEven,
+                  })}
+                >
+                  <span className="text-sm font-semibold text-red-800 dark:text-teal-300">
+                    {item.date}
+                  </span>
                 </div>
               </div>
-
-              <div
-                className={cn(
-                  'flex w-1/2',
-                  index % 2 === 0 ? 'justify-start pl-4' : 'justify-end pr-4'
-                )}
-              >
-                <span className="text-sm font-semibold text-red-800 dark:text-teal-300">
-                  {item.date}
-                </span>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
