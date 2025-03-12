@@ -24,10 +24,12 @@ export default function Timeline() {
             <div
               key={item.id}
               className={cn(
-                'relative flex items-center',
-                index % 2 === 0 ? 'justify-start' : 'justify-end'
+                'relative flex items-center justify-between',
+                index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
               )}
             >
+              <div className="absolute left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-red-800 dark:bg-teal-300" />
+
               <div className={cn('w-1/2', index % 2 === 0 ? 'pr-4' : 'pl-4')}>
                 <div className="rounded bg-slate-200 p-4 dark:bg-slate-800">
                   <h3 className="text-lg font-semibold text-slate-600 dark:text-slate-200">
@@ -41,14 +43,19 @@ export default function Timeline() {
                   <p className="mt-3 text-sm font-normal text-slate-600 dark:text-slate-400">
                     {item.description}
                   </p>
-
-                  <span className="font-semibold text-teal-500">
-                    {item.date}
-                  </span>
                 </div>
               </div>
 
-              <div className="absolute left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-red-800 dark:bg-teal-300" />
+              <div
+                className={cn(
+                  'flex w-1/2',
+                  index % 2 === 0 ? 'justify-start pl-4' : 'justify-end pr-4'
+                )}
+              >
+                <span className="text-sm font-semibold text-red-800 dark:text-teal-300">
+                  {item.date}
+                </span>
+              </div>
             </div>
           ))}
         </div>
