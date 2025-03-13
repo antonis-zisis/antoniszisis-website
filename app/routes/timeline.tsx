@@ -7,7 +7,7 @@ import { timelineData } from '@/data/timeline';
 
 export default function Timeline() {
   return (
-    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start">
+    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start px-6 md:px-0">
       <h1 className="pt-28 text-3xl font-semibold text-slate-600 dark:text-slate-200">
         Timeline
       </h1>
@@ -18,7 +18,7 @@ export default function Timeline() {
 
       <Divider />
 
-      <div className="relative w-full py-5">
+      <div className="relative w-full pt-10 pb-20">
         <div className="absolute top-[-8px] left-1/2 -translate-x-1/2">
           <svg
             width="12"
@@ -43,10 +43,13 @@ export default function Timeline() {
             return (
               <motion.div
                 key={item.id}
-                className={cn('relative flex items-center justify-between', {
-                  'flex-row': isEven,
-                  'flex-row-reverse': !isEven,
-                })}
+                className={cn(
+                  'relative flex flex-col items-center justify-between md:flex-row',
+                  {
+                    'md:flex-row': isEven,
+                    'md:flex-row-reverse': !isEven,
+                  }
+                )}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -55,9 +58,9 @@ export default function Timeline() {
                 <div className="absolute left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-red-800 dark:bg-teal-300" />
 
                 <div
-                  className={cn('w-1/2', {
-                    'pr-4': isEven,
-                    'pl-4': !isEven,
+                  className={cn('w-full md:w-1/2', {
+                    'md:pr-4': isEven,
+                    'md:pl-4': !isEven,
                   })}
                 >
                   <Card
@@ -69,9 +72,9 @@ export default function Timeline() {
                 </div>
 
                 <motion.div
-                  className={cn('flex w-1/2', {
-                    'justify-start pl-4': isEven,
-                    'justify-end pr-4': !isEven,
+                  className={cn('flex w-full md:w-1/2', {
+                    'md:justify-start md:pl-4': isEven,
+                    'md:justify-end md:pr-4': !isEven,
                   })}
                   initial={{ opacity: 0, x: isEven ? -30 : 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
