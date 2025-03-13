@@ -35,7 +35,7 @@ export default [
       'simple-import-sort/imports': 'warn',
       'simple-import-sort/exports': 'warn',
 
-      'id-length': ['warn', { min: 2, exceptions: ['_'] }],
+      'id-length': ['warn', { min: 2, exceptions: ['_', 'x', 'y'] }],
     },
     settings: {
       react: {
