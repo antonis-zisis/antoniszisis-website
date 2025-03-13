@@ -23,9 +23,9 @@ export function Card({ title, subtitle, description, tags }: Props) {
       </p>
 
       {tags && tags.length > 0 ? (
-        <ul className="mt-3 flex flex-wrap" aria-label="Technologies used">
+        <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
           {tags.map((tag) => (
-            <li key={tag} className="mr-2">
+            <li key={tag} className="mt-1 mr-2">
               <Chip>{tag}</Chip>
             </li>
           ))}
