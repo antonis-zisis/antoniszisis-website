@@ -12,16 +12,16 @@ export default function Index() {
   }
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start justify-center">
+    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start justify-center px-6 md:px-0">
       <span className="mb-6 font-mono text-lg font-normal">
         <Accent>Hi, my name is</Accent>
       </span>
 
-      <h1 className="mb-2 text-7xl font-semibold text-slate-600 dark:text-slate-200">
+      <h1 className="mb-2 text-4xl font-semibold text-slate-600 sm:text-5xl md:text-6xl lg:text-7xl dark:text-slate-200">
         Antonis Zisis.
       </h1>
 
-      <h2 className="mb-10 text-6xl font-semibold text-slate-400">
+      <h2 className="mb-10 text-2xl font-semibold text-slate-400 sm:text-4xl md:text-5xl lg:text-6xl">
         Welcome to my website!
       </h2>
 
@@ -35,7 +35,9 @@ export default function Index() {
         user experiences and scalable solutions.
       </p>
 
-      <Button onClick={onTimelineClick}>Check out my timeline!</Button>
+      <Button accessibilityLabel="Check my timeline" onClick={onTimelineClick}>
+        Check out my timeline!
+      </Button>
     </div>
   );
 }

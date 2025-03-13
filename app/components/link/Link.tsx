@@ -3,13 +3,20 @@ import type { ReactNode } from 'react';
 import { Link as RRLink, useMatch, useResolvedPath } from 'react-router';
 
 type Props = {
+  accessibilityLabel?: string;
   children: ReactNode;
   className?: string;
   openInNewTab?: boolean;
   to: string;
 };
 
-export function Link({ children, className, openInNewTab = false, to }: Props) {
+export function Link({
+  accessibilityLabel,
+  children,
+  className,
+  openInNewTab = false,
+  to,
+}: Props) {
   const resolved = useResolvedPath(to);
   const match = useMatch({ path: resolved.pathname, end: true });
 
@@ -25,6 +32,7 @@ export function Link({ children, className, openInNewTab = false, to }: Props) {
       to={to}
       target={openInNewTab ? '_blank' : undefined}
       rel={openInNewTab ? 'noopener noreferrer' : undefined}
+      aria-label={accessibilityLabel}
     >
       {children}
     </RRLink>

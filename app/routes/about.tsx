@@ -4,7 +4,7 @@ import { Icon } from '@/components/icon';
 
 export default function About() {
   return (
-    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start">
+    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start px-6 md:px-0">
       <h1 className="pt-28 text-3xl font-semibold text-slate-600 dark:text-slate-200">
         About Me
       </h1>
@@ -18,12 +18,12 @@ export default function About() {
       <div className="flex w-full flex-col gap-x-10 text-base text-slate-600 md:flex-row dark:text-slate-400">
         <div className="w-full md:w-1/3">
           <img
-            className="mb-10 rounded"
+            className="mb-6 rounded md:mb-10"
             src="https://res.cloudinary.com/dtywrdtmw/image/upload/v1741703170/antonis/me_2023_zylbnk.jpg"
             alt="My Avatar"
           />
 
-          <div className="space-y-2">
+          <div className="mb-6 space-y-2 md:mb-0">
             <div className="flex items-center">
               <Icon className="mr-2 size-5" name="BuildingOfficeIcon" />
               <h3>
