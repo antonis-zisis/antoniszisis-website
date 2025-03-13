@@ -25,7 +25,7 @@ const AllIcons = { ...HeroIcons, ...FeatherIcons };
 export type Icons = keyof typeof AllIcons;
 
 type Props = {
-  accessibilityLabel: string;
+  accessibilityLabel?: string;
   className?: string;
   name: Icons;
 };

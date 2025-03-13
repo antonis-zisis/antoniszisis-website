@@ -22,7 +22,15 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-10 flex h-20 w-full items-center justify-between px-6 py-0 sm:px-6 md:px-10 lg:px-20">
+    <header
+      className={cn(
+        'fixed top-0 z-10 flex h-20 w-full items-center justify-between px-6 py-0 transition-all duration-300 sm:px-6 md:px-10 lg:px-20',
+        {
+          'bg-white/80 shadow-md backdrop-blur-md dark:bg-slate-900/80':
+            window.innerWidth <= 768,
+        }
+      )}
+    >
       <nav className="relative flex w-full items-center justify-between">
         <div className="flex items-center justify-center">
           <Link accessibilityLabel="Home link" to="/">
