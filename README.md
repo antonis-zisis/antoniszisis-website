@@ -21,7 +21,7 @@ Documentation for the **Antonis Zisis** website.
 ## Features
 
 - [ ] SSR and pre-rendered pages
-- [ ] Responsive / Mobile friendly
+- [x] Responsive / Mobile friendly
 - [x] SEO Friendly
 - [x] Light and Dark mode
 - [x] Perfect Lighthouse Score
