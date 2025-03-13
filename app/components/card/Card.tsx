@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import { Chip } from '@/components/chip';
 
 type Props = {
@@ -9,7 +11,13 @@ type Props = {
 
 export function Card({ title, subtitle, description, tags }: Props) {
   return (
-    <div className="rounded bg-slate-200 p-4 dark:bg-slate-800">
+    <motion.div
+      className="rounded bg-slate-200 p-4 dark:bg-slate-800"
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      viewport={{ once: true }}
+    >
       <h3 className="text-lg font-semibold text-slate-600 dark:text-slate-200">
         {title}
       </h3>
@@ -31,6 +39,6 @@ export function Card({ title, subtitle, description, tags }: Props) {
           ))}
         </ul>
       ) : null}
-    </div>
+    </motion.div>
   );
 }
