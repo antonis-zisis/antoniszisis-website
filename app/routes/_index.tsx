@@ -35,7 +35,9 @@ export default function Index() {
         user experiences and scalable solutions.
       </p>
 
-      <Button onClick={onTimelineClick}>Check out my timeline!</Button>
+      <Button accessibilityLabel="Check my timeline" onClick={onTimelineClick}>
+        Check out my timeline!
+      </Button>
     </div>
   );
 }

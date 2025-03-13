@@ -14,13 +14,13 @@ export function Footer() {
       <div className="flex gap-5">
         <Link openInNewTab to="https://github.com/antonis-zisis">
           <HoverAnimation>
-            <Icon name="GitHubIcon" />
+            <Icon accessibilityLabel="Github link" name="GitHubIcon" />
           </HoverAnimation>
         </Link>
 
         <Link openInNewTab to="https://www.linkedin.com/in/antonios-zisis/">
           <HoverAnimation>
-            <Icon name="LinkedinIcon" />
+            <Icon accessibilityLabel="LinkedIn link" name="LinkedinIcon" />
           </HoverAnimation>
         </Link>
       </div>

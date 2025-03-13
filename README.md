@@ -22,9 +22,9 @@ Documentation for the **Antonis Zisis** website.
 
 - [ ] SSR and pre-rendered pages
 - [ ] Responsive / Mobile friendly
-- [ ] SEO Friendly
+- [x] SEO Friendly
 - [x] Light and Dark mode
-- [ ] Perfect Lighthouse Score
+- [x] Perfect Lighthouse Score
 
 ## Getting Started
 
