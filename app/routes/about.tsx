@@ -4,7 +4,7 @@ import { Icon } from '@/components/icon';
 
 export default function About() {
   return (
-    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start">
+    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start px-6 md:px-0">
       <h1 className="pt-28 text-3xl font-semibold text-slate-600 dark:text-slate-200">
         About Me
       </h1>

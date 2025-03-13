@@ -17,7 +17,7 @@ const links = [
 
 export function Navbar() {
   return (
-    <header className="fixed top-0 z-10 flex h-20 w-full items-center justify-between px-20 py-0">
+    <header className="fixed top-0 z-10 flex h-20 w-full items-center justify-between px-6 py-0 sm:px-6 md:px-10 lg:px-20">
       <nav className="relative flex w-full items-center justify-between">
         <div className="flex items-center justify-center">
           <Link accessibilityLabel="Home link" to="/">
