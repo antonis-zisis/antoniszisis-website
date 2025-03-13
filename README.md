@@ -6,16 +6,25 @@ Documentation for the **Antonis Zisis** website.
 
 - Domain name: <www.antoniszisis.com>
 - Domain registed at: <www.papaki.gr>
-- DNS handled at: <www.netlify.com>
+- Deployed and DNS handled at: <www.netlify.com>
 
 ## Tech Stack
 
+- TypeScript
 - React: 19
 - React Router: 7
 - Vite: 6
 - NodeJS: 22.14.0
 - PNPM: 10.6.2
 - Tailwind: 4
+
+## Features
+
+- [ ] SSR and pre-rendered pages
+- [ ] Responsive / Mobile friendly
+- [ ] SEO Friendly
+- [x] Light and Dark mode
+- [ ] Perfect Lighthouse Score
 
 ## Getting Started
 
@@ -53,6 +62,8 @@ pnpm run start
 
 ## CI/CD
 
-This project is setup to **automatically deploy** to production with Netlify. This will only work with commits to **main**. Simply commit and push to **main** (ideally using a PR), and that's it, Netlify will pick up the changes, build and deploy to production.
+This project is setup to **automatically deploy** to production with Netlify. This will only work with commits to **main**. Simply commit and push to **main** (ideally using a PR), and that's it, Netlify will pick up the changes, build and deploy to production. Opening a PR will trigger a deploy preview generation with
+Netlify and once completed a message will be posted on the PR with the deploy
+preview link.
 
 _Create and work on a different brach for changes not yet to be deployed to production._
