@@ -20,7 +20,7 @@ Documentation for the **Antonis Zisis** website.
 
 ## Features
 
-- [ ] SSR and pre-rendered pages
+- [x] SSR and pre-rendered pages
 - [x] Responsive / Mobile friendly
 - [x] SEO Friendly
 - [x] Light and Dark mode
