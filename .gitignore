@@ -7,5 +7,6 @@ node_modules/
 
 .netlify
 .DS_Store
+.vscode
 
 .env
