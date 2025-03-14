@@ -79,7 +79,8 @@ export function Navbar() {
 
         <div
           className={cn(
-            'absolute top-20 left-0 flex w-full flex-col items-center gap-6 bg-slate-100 py-6 font-mono text-lg transition-all duration-300 md:static md:flex md:w-auto md:flex-row md:gap-x-8 md:p-0 md:text-base dark:bg-slate-900',
+            'absolute top-20 left-0 flex w-full flex-col items-center gap-6 bg-slate-100 py-6 font-mono text-lg md:static md:flex md:w-auto md:flex-row md:gap-x-8 md:p-0 md:text-base dark:bg-slate-900',
+            'transition-all duration-300 md:transition-none',
             {
               'translate-y-0 opacity-100': isMenuOpen,
               '-translate-y-96 opacity-0 md:translate-y-0 md:opacity-100':
