@@ -11,7 +11,7 @@ Documentation for the **Antonis Zisis** website.
 ## Tech Stack
 
 - TypeScript
-- React: 19
+- React: 19.2
 - React Router: 7
 - Vite: 6
 - NodeJS: 22.14.0
