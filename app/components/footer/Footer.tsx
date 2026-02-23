@@ -1,5 +1,5 @@
 import { HoverAnimation } from '@/components/animated';
-import { Icon } from '@/components/icon';
+import { GitHubIcon, LinkedinIcon } from '@/components/icon';
 import { Link } from '@/components/link';
 
 export function Footer() {
@@ -14,13 +14,13 @@ export function Footer() {
       <div className="flex gap-5">
         <Link openInNewTab to="https://github.com/antonis-zisis">
           <HoverAnimation>
-            <Icon accessibilityLabel="Github link" name="GitHubIcon" />
+            <GitHubIcon aria-label="Github link" role="img" />
           </HoverAnimation>
         </Link>
 
         <Link openInNewTab to="https://www.linkedin.com/in/antonios-zisis/">
           <HoverAnimation>
-            <Icon accessibilityLabel="LinkedIn link" name="LinkedinIcon" />
+            <LinkedinIcon aria-label="LinkedIn link" role="img" />
           </HoverAnimation>
         </Link>
       </div>
