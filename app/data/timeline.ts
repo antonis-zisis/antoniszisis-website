@@ -16,7 +16,7 @@ export const timelineData = [
     description:
       'Leading a team of seven in developing live event pages for Stoiximan and Betano across web and native Android and iOS applications.',
     date: 'Nov 2024 - Present',
-    tags: ['JavaScript', 'Vue', 'VueX', 'Tailwind', 'Storybook'],
+    tags: ['JavaScript', 'Vue', 'VueX', 'Tailwind', 'Storybook', 'Vite'],
   },
   {
     id: 'causaly',
