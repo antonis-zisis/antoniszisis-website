@@ -1,6 +1,11 @@
 import { CompanyLink } from '@/components/company-link';
 import { Divider } from '@/components/divider';
-import { Icon } from '@/components/icon';
+import {
+  BeakerIcon,
+  BuildingOfficeIcon,
+  HomeIcon,
+  StarIcon,
+} from '@/components/icon';
 
 export default function About() {
   return (
@@ -25,24 +30,24 @@ export default function About() {
 
           <div className="mb-6 space-y-2 md:mb-0">
             <div className="flex items-center">
-              <Icon className="mr-2 size-5" name="BuildingOfficeIcon" />
+              <BuildingOfficeIcon className="mr-2 size-5" />
               <h3>
                 Currently working at <CompanyLink />.
               </h3>
             </div>
 
             <div className="flex items-center">
-              <Icon className="mr-2 size-5" name="HomeIcon" />
+              <HomeIcon className="mr-2 size-5" />
               <h3>Living in Kalamata, Greece.</h3>
             </div>
 
             <div className="flex items-center">
-              <Icon className="mr-2 size-5" name="BeakerIcon" />
+              <BeakerIcon className="mr-2 size-5" />
               <h3>TypeScript, React, Node, fp-ts.</h3>
             </div>
 
             <div className="flex items-center">
-              <Icon className="mr-2 size-5" name="StarIcon" />
+              <StarIcon className="mr-2 size-5" />
               <h3>Gym, Gaming and Movies.</h3>
             </div>
           </div>

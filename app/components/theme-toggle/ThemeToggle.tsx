@@ -1,5 +1,5 @@
 import { HoverAnimation } from '@/components/animated';
-import { Icon } from '@/components/icon';
+import { MoonIcon, SunIcon } from '@/components/icon';
 import { useTheme } from '@/contexts/ThemeContext';
 
 export function ThemeToggle() {
@@ -12,9 +12,9 @@ export function ThemeToggle() {
     >
       <HoverAnimation>
         {theme === 'dark' ? (
-          <Icon accessibilityLabel="Toggle light mode" name="SunIcon" />
+          <SunIcon aria-label="Toggle light mode" role="img" />
         ) : (
-          <Icon accessibilityLabel="Toggle dark mode" name="MoonIcon" />
+          <MoonIcon aria-label="Toggle dark mode" role="img" />
         )}
       </HoverAnimation>
     </button>

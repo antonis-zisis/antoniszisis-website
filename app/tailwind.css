@@ -8,7 +8,8 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: 'slnt' 0;
-    src: url('/fonts/Inter-VariableFont_slnt,wght.ttf');
+    font-display: swap;
+    src: url('/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');
   }
 
   html {
