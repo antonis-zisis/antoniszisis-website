@@ -52,6 +52,11 @@ export function links() {
       type: 'font/woff2',
       crossOrigin: 'anonymous' as const,
     },
+    {
+      rel: 'icon',
+      href: '/favicon.ico',
+      type: 'image/x-icon',
+    },
   ];
 }
 
@@ -66,9 +71,17 @@ export default function App() {
       </head>
 
       <body className="bg-slate-100 text-slate-600 antialiased dark:bg-slate-900 dark:text-slate-200">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-white focus:p-4 focus:text-slate-900"
+        >
+          Skip to main content
+        </a>
         <ThemeProvider>
           <Navbar />
-          <Outlet />
+          <main id="main-content">
+            <Outlet />
+          </main>
           <Footer />
         </ThemeProvider>
 

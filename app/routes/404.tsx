@@ -1,4 +1,10 @@
+import type { MetaFunction } from 'react-router';
+
 import { Link } from '@/components/link';
+
+export const meta: MetaFunction = () => {
+  return [{ title: '404 - Page Not Found | Antonis Zisis' }];
+};
 
 export default function NotFound() {
   return (
