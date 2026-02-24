@@ -22,8 +22,8 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-10 flex h-20 w-full items-center justify-between bg-white/80 px-6 py-0 shadow-md backdrop-blur-md transition-all duration-300 sm:px-6 md:bg-transparent md:px-10 md:shadow-none md:backdrop-blur-none lg:px-20 dark:bg-slate-900/80 md:dark:bg-transparent">
-      <nav className="relative flex w-full items-center justify-between">
+    <header className="fixed top-0 z-10 h-(--navbar-height) w-full bg-slate-100 shadow-sm dark:bg-slate-900">
+      <nav className="relative mx-auto flex h-full max-w-(--breakpoint-lg) items-center justify-between px-6 md:px-0">
         <div className="flex items-center justify-center">
           <Link accessibilityLabel="Home link" to="/">
             <HoverAnimation>

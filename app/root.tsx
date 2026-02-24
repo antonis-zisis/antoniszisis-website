@@ -79,7 +79,7 @@ export default function App() {
         </a>
         <ThemeProvider>
           <Navbar />
-          <main id="main-content">
+          <main id="main-content" className="pt-(--navbar-height)">
             <Outlet />
           </main>
           <Footer />
