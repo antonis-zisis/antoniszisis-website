@@ -1,9 +1,21 @@
 import cn from 'classnames';
 import { motion } from 'framer-motion';
+import type { MetaFunction } from 'react-router';
 
 import { Card } from '@/components/card';
 import { Divider } from '@/components/divider';
 import { timelineData } from '@/data/timeline';
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: 'Timeline | Antonis Zisis' },
+    {
+      name: 'description',
+      content:
+        'Explore the career timeline of Antonis Zisis — from his first role as a web developer to leading a team at Kaizen Gaming.',
+    },
+  ];
+};
 
 export default function Timeline() {
   return (

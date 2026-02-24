@@ -7,9 +7,11 @@
   "scripts": {
     "dev": "react-router dev --port 3000",
     "build": "react-router build",
-    "start": "react-router-serve build/server/index.js",
+    "preview": "react-router-serve build/server/index.js",
     "lint": "eslint 'app/**/*.{js,jsx,ts,tsx}' --quiet",
     "lint:fix": "eslint 'app/**/*.{js,jsx,ts,tsx}' --fix",
+    "format": "prettier --write 'app/**/*.{ts,tsx}'",
+    "format:check": "prettier --check 'app/**/*.{ts,tsx}'",
     "typecheck": "react-router typegen && tsc",
     "prepare": "husky"
   },
@@ -53,7 +55,7 @@
     "vite-tsconfig-paths": "^5.1.4"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=24.0.0"
   },
-  "packageManager": "pnpm@10.6.2"
+  "packageManager": "pnpm@10.28.2"
 }

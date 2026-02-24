@@ -1,3 +1,5 @@
+import type { MetaFunction } from 'react-router';
+
 import { CompanyLink } from '@/components/company-link';
 import { Divider } from '@/components/divider';
 import {
@@ -6,6 +8,17 @@ import {
   HomeIcon,
   StarIcon,
 } from '@/components/icon';
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: 'About | Antonis Zisis' },
+    {
+      name: 'description',
+      content:
+        'Learn more about Antonis Zisis — a full-stack software engineer from Greece with over a decade of experience.',
+    },
+  ];
+};
 
 export default function About() {
   return (
@@ -26,6 +39,7 @@ export default function About() {
             className="mb-6 rounded md:mb-10"
             src="https://res.cloudinary.com/dtywrdtmw/image/upload/v1741703170/antonis/me_2023_zylbnk.jpg"
             alt="My Avatar"
+            loading="lazy"
           />
 
           <div className="mb-6 space-y-2 md:mb-0">
