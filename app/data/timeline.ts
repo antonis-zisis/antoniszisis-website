@@ -29,7 +29,7 @@ export const timelineData = [
       'TypeScript',
       'React',
       'RxJS',
-      'Node.js',
+      'Node',
       'fp-ts',
       'GraphQL',
       'PostgreSQL',
@@ -37,14 +37,13 @@ export const timelineData = [
       'Remix',
       'Tailwind',
       'Zod',
-      'D3.js',
+      'D3',
       'Jest',
       'RTL',
       'Storybook',
       'Prisma',
       'Docker',
       'GCP',
-      // 'Playwright',
     ],
   },
   {
@@ -57,9 +56,9 @@ export const timelineData = [
     tags: [
       'TypeScript',
       'React',
-      'React-Native',
+      'React Native',
       'Redux',
-      'Next.js',
+      'Next',
       'Angular',
       'Tailwind',
       'Jest',
@@ -74,7 +73,7 @@ export const timelineData = [
     description:
       'Collaborated with an Agile Scrum team to develop the company’s core application, developing new features, maintaining existing code, and migrating outdated code from Silverlight and jQuery to React. Developed new backend features using microservices architecture with Node.js in AWS Lambda functions.',
     date: 'Sep 2013 - May 2019',
-    tags: ['JavaScript', 'React', 'Redux', 'Angular', 'Node.js', 'AWS'],
+    tags: ['JavaScript', 'React', 'Redux', 'Angular', 'Node', 'AWS'],
   },
   {
     id: 'freelance',
@@ -90,8 +89,8 @@ export const timelineData = [
     title: 'Software Engineering, BSc. (Hons)',
     company: 'University of Salford, UK',
     description:
-      'Graduated with First Class (Hons) degree in Software Engineering.',
-    date: '2009 - 2012',
+      'Graduated with First Class (Hons) degree in Software Engineering. Thesis: "XNA Game Studio vs Unity3D: Which is Better for teaching Game Development?".',
+    date: 'Sep 2009 - June 2012',
     tags: [],
   },
   {
@@ -101,6 +100,31 @@ export const timelineData = [
     description:
       'Selected among top-performing students from my university class to participate in a certified two-week intensive study program on e-discovery.',
     date: 'Apr 2011',
+    tags: [],
+  },
+  {
+    id: 'foundation',
+    title: 'Foundation Studies',
+    company: 'University of Salford, UK',
+    description:
+      'Completed foundation studies in Computer Science, Mathematics and English.',
+    date: 'Sep 2008 - June 2009',
+    tags: [],
+  },
+  {
+    id: 'italy',
+    title: 'Computer Engineering',
+    company: 'Universita di Genova, Italy',
+    description: '',
+    date: 'Sep 2007 - Jun 2008',
+    tags: [],
+  },
+  {
+    id: 'high-school',
+    title: 'High School Diploma',
+    company: '4th General Lyceum of Kalamata, Greece',
+    description: '',
+    date: 'Sep 2003 - June 2006',
     tags: [],
   },
 ] satisfies Array<TimelineEntry>;
