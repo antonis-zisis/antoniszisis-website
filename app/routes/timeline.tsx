@@ -19,7 +19,7 @@ export const meta: MetaFunction = () => {
 
 export default function Timeline() {
   return (
-    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start px-6 md:px-0">
+    <div className="mx-auto flex min-h-[calc(100vh-var(--navbar-height)-var(--footer-height))] max-w-(--breakpoint-lg) flex-col items-start px-6 md:px-0">
       <h1 className="pt-28 text-3xl font-semibold text-slate-600 dark:text-slate-200">
         Timeline
       </h1>

@@ -2,6 +2,11 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --navbar-height: 5rem; /* h-20 */
+  --footer-height: 5rem; /* h-20 */
+}
+
 @layer base {
   @font-face {
     font-family: 'Inter';

@@ -12,7 +12,7 @@ export default function Index() {
   }
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-start justify-center px-6 md:px-0">
+    <div className="mx-auto flex min-h-[calc(100vh-var(--navbar-height)-var(--footer-height))] max-w-(--breakpoint-lg) flex-col items-start justify-center px-6 md:px-0">
       <span className="mb-6 font-mono text-lg font-normal">
         <Accent>Hi, my name is</Accent>
       </span>

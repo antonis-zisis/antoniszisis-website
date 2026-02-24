@@ -8,7 +8,7 @@ export const meta: MetaFunction = () => {
 
 export default function NotFound() {
   return (
-    <div className="mx-auto flex min-h-screen max-w-(--breakpoint-lg) flex-col items-center justify-center">
+    <div className="mx-auto flex min-h-[calc(100vh-var(--navbar-height)-var(--footer-height))] max-w-(--breakpoint-lg) flex-col items-center justify-center">
       <h1 className="text-3xl font-semibold">404 - Page Not Found</h1>
       <p className="text-base">
         Oops! The page you&apos;re looking for doesn&apos;t exist.
