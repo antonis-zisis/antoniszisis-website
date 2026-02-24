@@ -4,9 +4,10 @@
 
 Documentation for the **Antonis Zisis** website.
 
-- Domain name: <www.antoniszisis.com>
-- Domain registed at: <www.papaki.gr>
-- Deployed and DNS handled at: <www.netlify.com>
+- Domain name: [www.antoniszisis.com](www.antoniszisis.com)
+- Domain registed at: [Papaki](www.papaki.gr)
+- Deployed and DNS handled at: [Netlify](www.netlify.com)
+- Analytics at: [Umami](https://cloud.umami.is/analytics/eu/websites/27e39b06-544d-41a5-b396-271e444b5373)
 
 ## Tech Stack
 
