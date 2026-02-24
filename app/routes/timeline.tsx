@@ -20,7 +20,7 @@ export const meta: MetaFunction = () => {
 export default function Timeline() {
   return (
     <div className="mx-auto flex min-h-[calc(100vh-var(--navbar-height)-var(--footer-height))] max-w-(--breakpoint-lg) flex-col items-start px-6 md:px-0">
-      <h1 className="pt-28 text-3xl font-semibold text-slate-600 dark:text-slate-200">
+      <h1 className="pt-8 text-3xl font-semibold text-slate-600 dark:text-slate-200">
         Timeline
       </h1>
 
@@ -31,7 +31,7 @@ export default function Timeline() {
       <Divider />
 
       <div className="relative w-full pt-10 pb-20">
-        <div className="absolute top-[-8px] left-1/2 -translate-x-1/2">
+        <div className="absolute -top-2 left-1/2 -translate-x-1/2">
           <svg
             width="12"
             height="12"

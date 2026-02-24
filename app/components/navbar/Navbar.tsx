@@ -22,7 +22,7 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-10 h-(--navbar-height) w-full bg-white/80 shadow-md backdrop-blur-md transition-all duration-300 md:bg-transparent md:shadow-none md:backdrop-blur-none dark:bg-slate-900/80 md:dark:bg-transparent">
+    <header className="fixed top-0 z-10 h-(--navbar-height) w-full bg-slate-100 shadow-sm dark:bg-slate-900">
       <nav className="relative mx-auto flex h-full max-w-(--breakpoint-lg) items-center justify-between px-6 md:px-0">
         <div className="flex items-center justify-center">
           <Link accessibilityLabel="Home link" to="/">
