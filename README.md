@@ -13,14 +13,14 @@ Documentation for the **Antonis Zisis** website.
 - TypeScript
 - React: 19.2
 - React Router: 7
-- Vite: 6
-- NodeJS: 22.14.0
-- PNPM: 10.6.2
+- Vite: 7
+- NodeJS: 24.13.0
+- PNPM: 10.28.2
 - Tailwind: 4
 
 ## Features
 
-- [ ] SSR and pre-rendered pages
+- [x] SSR and pre-rendered pages
 - [x] Responsive / Mobile friendly
 - [x] SEO Friendly
 - [x] Light and Dark mode
