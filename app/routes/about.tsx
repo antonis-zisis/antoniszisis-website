@@ -1,5 +1,6 @@
 import type { MetaFunction } from 'react-router';
 
+import { Chip } from '@/components/chip';
 import { CompanyLink } from '@/components/company-link';
 import { Divider } from '@/components/divider';
 import {
@@ -8,6 +9,36 @@ import {
   HomeIcon,
   StarIcon,
 } from '@/components/icon';
+
+const skills = [
+  'TypeScript',
+  'JavaScript',
+  'React',
+  'React Native',
+  'Expo',
+  'Next',
+  'Redux',
+  'RxJS',
+  'D3',
+  'Effect',
+  'fp-ts',
+  'Node',
+  'GraphQL',
+  'PostgreSQL',
+  'MongoDB',
+  'Prisma',
+  'Zod',
+  'Vite',
+  'Tailwind',
+  'Storybook',
+  'Jest',
+  'Docker',
+  'GCP',
+  'AWS',
+  'Vue',
+  'Angular',
+  'Claude',
+];
 
 export const meta: MetaFunction = () => {
   return [
@@ -109,6 +140,18 @@ export default function About() {
             through side projects - right now, I&apos;m exploring Effect and
             Lynx.
           </p>
+
+          <div className="mt-10 flex flex-col gap-y-3">
+            <h3 className="text-base font-semibold text-slate-600 dark:text-slate-200">
+              Skills
+            </h3>
+
+            <div className="flex flex-wrap gap-2">
+              {skills.map((skill) => (
+                <Chip key={skill}>{skill}</Chip>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
