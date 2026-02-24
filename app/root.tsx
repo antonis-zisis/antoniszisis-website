@@ -46,13 +46,6 @@ export const meta: MetaFunction = () => {
 export function links() {
   return [
     {
-      rel: 'preload',
-      href: '/fonts/Inter-VariableFont_slnt,wght.woff2',
-      as: 'font',
-      type: 'font/woff2',
-      crossOrigin: 'anonymous' as const,
-    },
-    {
       rel: 'icon',
       href: '/favicon.ico',
       type: 'image/x-icon',
