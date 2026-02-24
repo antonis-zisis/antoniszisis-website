@@ -73,6 +73,11 @@ export default function App() {
             __html: `(function(){try{var t=localStorage.getItem('az-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`,
           }}
         />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="27e39b06-544d-41a5-b396-271e444b5373"
+        />
       </head>
 
       <body className="bg-slate-100 text-slate-600 antialiased dark:bg-slate-900 dark:text-slate-200">
