@@ -86,6 +86,15 @@ export function Navbar() {
             </Link>
           ))}
 
+          <a
+            href="https://blog.antoniszisis.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-600 hover:text-red-800 dark:text-slate-200 dark:hover:text-teal-300"
+          >
+            Blog
+          </a>
+
           <ThemeToggle />
         </div>
       </nav>
