@@ -68,9 +68,9 @@ export default function About() {
         <div className="w-full md:w-1/3">
           <img
             className="mb-6 rounded md:mb-10"
-            src="https://res.cloudinary.com/dtywrdtmw/image/upload/v1741703170/antonis/me_2023_zylbnk.jpg"
+            src="https://res.cloudinary.com/dtywrdtmw/image/upload/f_auto,q_auto,w_400/v1741703170/antonis/me_2023_zylbnk.jpg"
             alt="My Avatar"
-            loading="lazy"
+            fetchPriority="high"
           />
 
           <div className="mb-6 space-y-2 md:mb-0">
