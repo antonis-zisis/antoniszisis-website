@@ -13,7 +13,7 @@ import {
 
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
-import { ThemeProvider } from '@/contexts/ThemeContext';
+import { THEME_NAME, ThemeProvider } from '@/contexts/ThemeContext';
 
 export const meta: MetaFunction = () => {
   return [
@@ -63,7 +63,7 @@ export default function App() {
         <Links />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('az-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`,
+            __html: `(function(){try{var t=localStorage.getItem('${THEME_NAME}');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`,
           }}
         />
         <script

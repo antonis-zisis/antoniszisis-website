@@ -2,69 +2,44 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/99607c54-38dd-4e2e-998f-06bfbd9d3cea/deploy-status)](https://app.netlify.com/sites/antoniszisis/deploys)
 
-Documentation for the **Antonis Zisis** website.
+Personal website at [www.antoniszisis.com](https://www.antoniszisis.com)
 
-- Domain name: [www.antoniszisis.com](www.antoniszisis.com)
-- Domain registed at: [Papaki](www.papaki.gr)
-- Deployed and DNS handled at: [Netlify](www.netlify.com)
-- Analytics at: [Umami](https://cloud.umami.is/analytics/eu/websites/27e39b06-544d-41a5-b396-271e444b5373)
+- Domain registered at: [Papaki](https://www.papaki.gr)
+- Deployed and DNS handled at: [Netlify](https://www.netlify.com)
+- Commits to `main` trigger an automatic production deploy.
 
 ## Tech Stack
 
 - TypeScript
-- React: 19.2
-- React Router: 7
-- Vite: 7
-- NodeJS: 24.13.0
-- PNPM: 10.28.2
-- Tailwind: 4
+- React 19
+- React Router 7
+- Vite 7
+- Tailwind CSS 4
+- Node.js 24
+- PNPM 10
 
-## Features
+## Scripts
 
-- [x] SSR and pre-rendered pages
-- [x] Responsive / Mobile friendly
-- [x] SEO Friendly
-- [x] Light and Dark mode
-- [x] Perfect Lighthouse Score
+| Command          | Description                  |
+| ---------------- | ---------------------------- |
+| `pnpm dev`       | Start development server     |
+| `pnpm build`     | Build for production         |
+| `pnpm start`     | Start production server      |
+| `pnpm lint`      | Run ESLint                   |
+| `pnpm format`    | Run Prettier                 |
+| `pnpm typecheck` | Run TypeScript type checking |
 
-## Getting Started
+## Project Structure
 
-Get the source code
-
-```bash
-git clone git@github.com:antonis-zisis/antoniszisis-website.git
+```text
+app/
+├── components/   # Reusable UI components
+├── contexts/     # React contexts (theme)
+├── data/         # Static data (timeline, skills)
+└── routes/       # Page routes (home, about, timeline, 404)
+public/           # Static assets (fonts, favicon, sitemap)
 ```
 
-Install dependencies
+## License
 
-```bash
-pnpm install
-```
-
-Run the development server
-
-```bash
-pnpm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-Build for production
-
-```bash
-pnpm run build
-```
-
-Start the production build
-
-```bash
-pnpm run start
-```
-
-## CI/CD
-
-This project is setup to **automatically deploy** to production with Netlify. This will only work with commits to **main**. Simply commit and push to **main** (ideally using a PR), and that's it, Netlify will pick up the changes, build and deploy to production. Opening a PR will trigger a deploy preview generation with
-Netlify and once completed a message will be posted on the PR with the deploy
-preview link.
-
-_Create and work on a different brach for changes not yet to be deployed to production._
+© 2026 Antonis Zisis. All rights reserved. This repository is public for reference and transparency only — no permission is granted to copy, modify, or redistribute the code.

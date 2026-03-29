@@ -2,8 +2,10 @@
   "name": "antoniszisis-website",
   "version": "0.4.1",
   "type": "module",
-  "description": "Antonis Zisis' personal website.",
+  "private": true,
   "author": "Antonis Zisis",
+  "description": "Antonis Zisis' personal website.",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "react-router dev --port 3000",
     "build": "react-router build",

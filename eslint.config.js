@@ -35,6 +35,7 @@ export default [
       'simple-import-sort/imports': 'warn',
       'simple-import-sort/exports': 'warn',
 
+      curly: ['error', 'all'],
       'id-length': ['warn', { min: 2, exceptions: ['_', 'x', 'y'] }],
     },
     settings: {

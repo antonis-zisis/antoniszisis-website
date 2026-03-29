@@ -9,36 +9,7 @@ import {
   HomeIcon,
   StarIcon,
 } from '@/components/icon';
-
-const skills = [
-  'TypeScript',
-  'JavaScript',
-  'React',
-  'React Native',
-  'Expo',
-  'Next',
-  'Redux',
-  'RxJS',
-  'D3',
-  'Effect',
-  'fp-ts',
-  'Node',
-  'GraphQL',
-  'PostgreSQL',
-  'MongoDB',
-  'Prisma',
-  'Zod',
-  'Vite',
-  'Tailwind',
-  'Storybook',
-  'Jest',
-  'Docker',
-  'GCP',
-  'AWS',
-  'Vue',
-  'Angular',
-  'Claude',
-];
+import { skills } from '@/data/skills';
 
 const AVATAR_URL =
   'https://res.cloudinary.com/dtywrdtmw/image/upload/f_auto,q_auto,w_400/v1741703170/antonis/me_2023_zylbnk.jpg';
@@ -77,6 +48,8 @@ export default function About() {
             className="mb-6 rounded md:mb-10"
             src={AVATAR_URL}
             alt="My Avatar"
+            width={400}
+            height={533}
             fetchPriority="high"
           />
 
