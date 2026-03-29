@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { createContext, useContext, useEffect, useState } from 'react';
 
-const THEME_NAME = 'az-theme';
+export const THEME_NAME = 'az-theme';
 
 type Theme = 'light' | 'dark';
 
