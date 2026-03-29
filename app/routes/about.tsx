@@ -1,4 +1,4 @@
-import type { MetaFunction } from 'react-router';
+import type { LinksFunction, MetaFunction } from 'react-router';
 
 import { Chip } from '@/components/chip';
 import { CompanyLink } from '@/components/company-link';
@@ -40,6 +40,13 @@ const skills = [
   'Claude',
 ];
 
+const AVATAR_URL =
+  'https://res.cloudinary.com/dtywrdtmw/image/upload/f_auto,q_auto,w_400/v1741703170/antonis/me_2023_zylbnk.jpg';
+
+export const links: LinksFunction = () => [
+  { rel: 'preload', as: 'image', href: AVATAR_URL },
+];
+
 export const meta: MetaFunction = () => {
   return [
     { title: 'About | Antonis Zisis' },
@@ -68,9 +75,9 @@ export default function About() {
         <div className="w-full md:w-1/3">
           <img
             className="mb-6 rounded md:mb-10"
-            src="https://res.cloudinary.com/dtywrdtmw/image/upload/v1741703170/antonis/me_2023_zylbnk.jpg"
+            src={AVATAR_URL}
             alt="My Avatar"
-            loading="lazy"
+            fetchPriority="high"
           />
 
           <div className="mb-6 space-y-2 md:mb-0">
