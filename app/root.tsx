@@ -55,7 +55,7 @@ export function links() {
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
 

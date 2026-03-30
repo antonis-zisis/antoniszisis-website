@@ -1,7 +1,6 @@
 import cn from 'classnames';
 import { useState } from 'react';
 
-import { HoverAnimation } from '@/components/animated';
 import { Link } from '@/components/link';
 import { Logo } from '@/components/logo';
 import { ThemeToggle } from '@/components/theme-toggle';
@@ -26,9 +25,7 @@ export function Navbar() {
       <nav className="relative mx-auto flex h-full max-w-(--breakpoint-lg) items-center justify-between px-6 md:px-0">
         <div className="flex items-center justify-center">
           <Link accessibilityLabel="Home link" to="/">
-            <HoverAnimation>
-              <Logo />
-            </HoverAnimation>
+            <Logo />
           </Link>
         </div>
 

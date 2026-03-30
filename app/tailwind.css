@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --navbar-height: 5rem; /* h-20 */
+  --navbar-height: 4.2rem; /* h-17 */
   --footer-height: 5rem; /* h-20 */
 }
 

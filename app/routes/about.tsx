@@ -57,7 +57,12 @@ export default function About() {
             <div className="flex items-center">
               <BuildingOfficeIcon className="mr-2 size-5" />
               <h3>
-                Currently working at <CompanyLink />.
+                Currently working at{' '}
+                <CompanyLink
+                  link="https://kaizengaming.com/home"
+                  text="Kaizen Gaming"
+                />
+                .
               </h3>
             </div>
 
@@ -68,7 +73,7 @@ export default function About() {
 
             <div className="flex items-center">
               <BeakerIcon className="mr-2 size-5" />
-              <h3>TypeScript, React, Node, fp-ts.</h3>
+              <h3>TypeScript, React, Node, Effect.</h3>
             </div>
 
             <div className="flex items-center">
@@ -84,8 +89,13 @@ export default function About() {
             I hold a B.Sc. in Software Engineering from the University of
             Salford, U.K., and I&apos;ve been working in the industry for over a
             decade. Throughout my career, I&apos;ve contributed to both small
-            startups and large corporations, gaining experience across diverse
-            environments.
+            startups and large corporations, including roles at{' '}
+            <CompanyLink link="https://www.causaly.com/" text="Causaly" /> and{' '}
+            <CompanyLink
+              link="https://www.agileactors.com/"
+              text="Agile Actors"
+            />
+            , gaining experience across diverse environments.
           </p>
 
           <p>
@@ -109,16 +119,20 @@ export default function About() {
 
           <p>
             Currently, I&apos;m a Software Engineering Team Lead at{' '}
-            <CompanyLink />, where I lead a team of seven in developing live
-            event pages for Stoiximan and Betano. My role involves technical
-            decision-making, mentoring, and fostering team growth.
+            <CompanyLink
+              text="Kaizen Gaming"
+              link="https://kaizengaming.com/home"
+            />
+            , where I lead a team of seven in developing live event pages for
+            Stoiximan and Betano. My role involves technical decision-making,
+            mentoring, and fostering team growth.
           </p>
 
           <p>
             Outside of work, I enjoy hitting the gym, playing video games, and
             watching movies. I also love experimenting with new technologies
-            through side projects - right now, I&apos;m exploring Effect and
-            Lynx.
+            through side projects - right now, I&apos;m exploring Effect, Remix
+            3 and coding with Claude Code.
           </p>
 
           <div className="mt-10 flex flex-col gap-y-3">
@@ -126,7 +140,7 @@ export default function About() {
               Skills
             </h3>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 pb-10">
               {skills.map((skill) => (
                 <Chip key={skill}>{skill}</Chip>
               ))}
