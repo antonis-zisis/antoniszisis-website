@@ -28,7 +28,12 @@ export default function Index() {
       <p className="mb-12 max-w-2xl text-lg font-normal text-slate-600 dark:text-slate-400">
         I&apos;m a Full-Stack Software Engineer from Greece, specializing in
         building web and mobile applications. Currently, I lead a team of seven
-        at <CompanyLink />, developing the live events pages for
+        at{' '}
+        <CompanyLink
+          link="https://kaizengaming.com/home"
+          text="Kaizen Gaming"
+        />
+        , developing the live events pages for
         <Accent> Stoiximan</Accent> and
         <Accent> Betano</Accent>. Passionate about crafting high-performance
         applications and fostering team growth, I thrive on building seamless
