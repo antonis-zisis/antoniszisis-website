@@ -11,9 +11,6 @@ importers:
       '@react-router/node':
         specifier: ^7.13.0
         version: 7.13.0(react-router@7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
-      '@react-router/remix-routes-option-adapter':
-        specifier: ^7.13.0
-        version: 7.13.0(@react-router/dev@7.13.0(@react-router/serve@7.13.0(react-router@7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@22.19.11)(jiti@2.6.1)(lightningcss@1.31.1)(react-router@7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(lightningcss@1.31.1)(yaml@2.8.2))(yaml@2.8.2))(typescript@5.9.3)
       '@react-router/serve':
         specifier: ^7.13.0
         version: 7.13.0(react-router@7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
@@ -1269,16 +1266,6 @@ packages:
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react-router: 7.13.0
-      typescript: ^5.1.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
-  '@react-router/remix-routes-option-adapter@7.13.0':
-    resolution: {integrity: sha512-Ydnx4mv+E6ZFtf91g188ieHzakExMkRS1ki/x2osrwN75q8Kq8yZlzKky3Fyr0wpsBiZA7SeZBZKaRX2QW4BqQ==}
-    engines: {node: '>=20.0.0'}
-    peerDependencies:
-      '@react-router/dev': ^7.13.0
       typescript: ^5.1.0
     peerDependenciesMeta:
       typescript:
@@ -6137,12 +6124,6 @@ snapshots:
     dependencies:
       '@mjackson/node-fetch-server': 0.2.0
       react-router: 7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-    optionalDependencies:
-      typescript: 5.9.3
-
-  '@react-router/remix-routes-option-adapter@7.13.0(@react-router/dev@7.13.0(@react-router/serve@7.13.0(react-router@7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@22.19.11)(jiti@2.6.1)(lightningcss@1.31.1)(react-router@7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(lightningcss@1.31.1)(yaml@2.8.2))(yaml@2.8.2))(typescript@5.9.3)':
-    dependencies:
-      '@react-router/dev': 7.13.0(@react-router/serve@7.13.0(react-router@7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@22.19.11)(jiti@2.6.1)(lightningcss@1.31.1)(react-router@7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(lightningcss@1.31.1)(yaml@2.8.2))(yaml@2.8.2)
     optionalDependencies:
       typescript: 5.9.3
 
