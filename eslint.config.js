@@ -9,9 +9,7 @@ import tseslint from 'typescript-eslint';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  {
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-  },
+  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   {
     languageOptions: {
       globals: globals.browser,
@@ -40,7 +38,7 @@ export default [
     },
     settings: {
       react: {
-        version: 'detect',
+        version: '19.2.7',
       },
     },
   },
