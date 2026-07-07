@@ -4,7 +4,7 @@ Personal website for Antonis Zisis.
 
 ## Tech Stack
 
-- **Framework**: React Router v7 (file-based routing)
+- **Framework**: React Router v8 (file-based routing)
 - **UI**: React 19, TypeScript, Tailwind CSS v4
 - **Animations**: Framer Motion
 - **Deployment**: Netlify
@@ -25,9 +25,9 @@ pnpm format:check # prettier check
 
 ## Code Conventions
 
-- Components live in `app/components/<name>/` with an `index.ts` barrel export
-- Routes are in `app/routes/`
-- Static data lives in `app/data/`
+- Components live in `src/components/<name>/` with an `index.ts` barrel export
+- Routes are in `src/routes/`
+- Static data lives in `src/data/`
 - Commits must follow **Conventional Commits** (enforced by commitlint + husky)
 
 ## Rules
