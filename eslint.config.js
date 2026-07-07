@@ -1,22 +1,15 @@
-import pluginJs from '@eslint/js';
+import eslint from '@eslint/js';
+import { defineConfig } from 'eslint/config';
 import pluginImport from 'eslint-plugin-import';
 import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
 import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
-import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-  {
-    languageOptions: {
-      globals: globals.browser,
-    },
-  },
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
+export default defineConfig([
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   {
     plugins: {
@@ -35,6 +28,11 @@ export default [
 
       curly: ['error', 'all'],
       'id-length': ['warn', { min: 2, exceptions: ['_', 'x', 'y'] }],
+      'padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', prev: 'block-like', next: '*' },
+        { blankLine: 'always', prev: '*', next: 'return' },
+      ],
     },
     settings: {
       react: {
@@ -42,4 +40,4 @@ export default [
       },
     },
   },
-];
+]);
