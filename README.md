@@ -12,8 +12,8 @@ Personal website at [www.antoniszisis.com](https://www.antoniszisis.com)
 
 - TypeScript
 - React 19
-- React Router 7
-- Vite 7
+- React Router 8
+- Vite 8
 - Tailwind CSS 4
 - Node.js 24
 - PNPM 10
@@ -32,7 +32,7 @@ Personal website at [www.antoniszisis.com](https://www.antoniszisis.com)
 ## Project Structure
 
 ```text
-app/
+src/
 ├── components/   # Reusable UI components
 ├── contexts/     # React contexts (theme)
 ├── data/         # Static data (timeline, skills)
