@@ -1,9 +1,7 @@
-import cn from 'classnames';
-import { motion } from 'framer-motion';
 import type { MetaFunction } from 'react-router';
 
-import { Card } from '@/components/card';
 import { Divider } from '@/components/divider';
+import { TimelineItem } from '@/components/timeline-item';
 import { timelineData } from '@/data/timeline';
 
 export const meta: MetaFunction = () => {
@@ -49,57 +47,9 @@ export default function Timeline() {
         <div className="absolute top-0 left-1/2 h-full w-px -translate-x-1/2 transform bg-red-800 dark:bg-teal-300" />
 
         <div className="flex flex-col space-y-8">
-          {timelineData.map((item, index) => {
-            const isEven = index % 2 === 0;
-
-            return (
-              <motion.div
-                key={item.id}
-                className={cn(
-                  'relative flex flex-col items-center justify-between md:flex-row',
-                  {
-                    'md:flex-row': isEven,
-                    'md:flex-row-reverse': !isEven,
-                  }
-                )}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
-                viewport={{ once: true, amount: 0.2 }} // triggers when 20% of the item is in view
-              >
-                <div className="absolute left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-red-800 dark:bg-teal-300" />
-
-                <div
-                  className={cn('w-full md:w-1/2', {
-                    'md:pr-4': isEven,
-                    'md:pl-4': !isEven,
-                  })}
-                >
-                  <Card
-                    title={item.title}
-                    subtitle={item.company}
-                    description={item.description}
-                    tags={item.tags}
-                  />
-                </div>
-
-                <motion.div
-                  className={cn('flex w-full md:w-1/2', {
-                    'md:justify-start md:pl-4': isEven,
-                    'md:justify-end md:pr-4': !isEven,
-                  })}
-                  initial={{ opacity: 0, x: isEven ? -30 : 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
-                  viewport={{ once: true }}
-                >
-                  <span className="text-sm font-semibold text-red-800 dark:text-teal-300">
-                    {item.date}
-                  </span>
-                </motion.div>
-              </motion.div>
-            );
-          })}
+          {timelineData.map((item, index) => (
+            <TimelineItem key={item.id} item={item} isEven={index % 2 === 0} />
+          ))}
         </div>
       </div>
     </div>

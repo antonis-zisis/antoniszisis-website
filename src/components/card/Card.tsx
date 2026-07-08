@@ -5,7 +5,7 @@ import { Chip } from '@/components/chip';
 type Props = {
   title: string;
   subtitle: string;
-  description: string;
+  description: Array<string>;
   tags?: Array<string>;
 };
 
@@ -19,16 +19,23 @@ export function Card({ title, subtitle, description, tags }: Props) {
       viewport={{ once: true }}
     >
       <h3 className="text-lg font-semibold text-slate-600 dark:text-slate-200">
-        {title}
+        {title || subtitle}
       </h3>
 
-      <h4 className="text-base text-slate-600 dark:text-slate-400">
-        {subtitle}
-      </h4>
+      {title ? (
+        <h4 className="text-base text-slate-600 dark:text-slate-400">
+          {subtitle}
+        </h4>
+      ) : null}
 
-      <p className="mt-3 text-sm font-normal text-slate-600 dark:text-slate-400">
-        {description}
-      </p>
+      {description.map((paragraph, index) => (
+        <p
+          key={index}
+          className="mt-3 font-serif text-sm font-normal text-slate-600 dark:text-slate-400"
+        >
+          {paragraph}
+        </p>
+      ))}
 
       {tags && tags.length > 0 ? (
         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
