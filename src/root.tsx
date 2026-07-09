@@ -50,6 +50,10 @@ export function links() {
       href: '/favicon.ico',
       type: 'image/x-icon',
     },
+    {
+      rel: 'preconnect',
+      href: 'https://res.cloudinary.com',
+    },
   ];
 }
 
