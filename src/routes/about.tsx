@@ -12,7 +12,11 @@ import {
 import { skills } from '@/data/skills';
 
 const AVATAR_URL =
-  'https://res.cloudinary.com/dtywrdtmw/image/upload/f_auto,q_auto,w_400/v1741703170/antonis/me_2023_zylbnk.jpg';
+  'https://res.cloudinary.com/dtywrdtmw/image/upload/f_auto,q_auto,w_400/v1783590629/antonis/me_2025_kumy8i.jpg';
+
+// tiny blurred preview (16px wide, ICC profile stripped) inlined so the image area is painted before the Cloudinary asset arrives
+const AVATAR_PLACEHOLDER =
+  'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDACgcHiMeGSgjISMtKygwPGRBPDc3PHtYXUlkkYCZlo+AjIqgtObDoKrarYqMyP/L2u71////m8H////6/+b9//j/2wBDASstLTw1PHZBQXb4pYyl+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj/wAARCAAVABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABkQAAMBAQEAAAAAAAAAAAAAAAABAiEDE//EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABgRAAMBAQAAAAAAAAAAAAAAAAAREgFB/9oADAMBAAIRAxEAPwC1dUL6oy3QTo0UYmTp6PDAA4ZZ/9k=';
 
 export const links: LinksFunction = () => [
   { rel: 'preload', as: 'image', href: AVATAR_URL },
@@ -45,7 +49,11 @@ export default function About() {
       <div className="flex w-full flex-col gap-x-10 text-base text-slate-600 md:flex-row dark:text-slate-400">
         <div className="w-full md:w-1/3">
           <img
-            className="mb-6 rounded md:mb-10"
+            className="mb-6 aspect-400/533 w-full rounded object-cover md:mb-10"
+            style={{
+              backgroundImage: `url(${AVATAR_PLACEHOLDER})`,
+              backgroundSize: 'cover',
+            }}
             src={AVATAR_URL}
             alt="My Avatar"
             width={400}
